@@ -1,0 +1,140 @@
+/*Media Responsive CSS Codes */
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media screen and (max-width: 768px) {
+  .container{
+    width: 100%;
+  }
+  .banner .img-container img{
+    height:556px;
+    width:auto;
+  }
+  #flex-container{
+    height:80vh;
+    display: flex;
+    flex-direction:column-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items:center;
+  }
+  #flex-item{
+    flex-direction:column-reverse;
+    flex-basis: 100%;
+    flex: 0;
+    width:100%;
+  }
+
+  .cards-item {
+	  width: 100%;
+	}
+  .banner .heading{
+    padding: 0 10px;
+  }
+
+  .banner .heading h1 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .banner .heading h1 span {
+    display: inline !important;
+  }
+
+  .banner .btn {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .card-title {
+    color: #0c0c0c;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    }
+    .card-text {
+    flex: 1 1 auto;
+    font-size: 1.5rem;
+    color: #222121;
+    line-height: 1.5;
+    padding: 10px 0;
+    }
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media screen and (max-width: 480px){
+  .container{
+    width: 100%;
+  }
+  .banner .img-container img{
+    height:320px;
+    width:auto;
+  }
+  #flex-container{
+    height:80vh;
+    display: flex;
+    flex-direction:column-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+  #flex-item{
+    flex-direction:column-reverse;
+    flex-basis: 100%;
+    flex: 0;
+    width:100%;
+  }
+
+  .cards-item {
+	  width: 100%;
+	}
+  .banner .heading h1 {
+    font-size: 32px;
+  }
+
+  .banner .heading h1 span {
+    display: inline !important;
+  }
+
+  .banner .btn {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+
+  
+  .card-title {
+    color: #0c0c0c;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    }
+    .card-text {
+    flex: 1 1 auto;
+    font-size: 1rem;
+    color: #222121;
+    line-height: 1.5;
+    padding: 10px 0;
+    }
+    .upcoming h1{
+      font-size: 28px;
+    }
+    .upcoming h2{
+      font-size: 26px;
+    }
+    .upcoming h3{
+      font-size: 18px;
+    }
+}

@@ -1,0 +1,318 @@
+body, div, span, h1, h2, h3, h4, h5, h6, p, a {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+::selection{
+	background:#3DBAFD;
+	color:#fff;
+}
+html{
+	scroll-behavior: smooth;
+}
+.container{
+	width: 80%;
+	margin:auto;
+}
+.row{
+	width: 100%;
+}
+#flex-container{
+	height:100vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+}
+#flex-item{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+
+/* Banner Section CSS Start....*/
+
+.banner{
+	background: #2d25a0;
+}
+
+
+.banner .heading h1{
+	font-size: 64px;
+	color: #fff;
+}
+.banner .heading h1 span{
+	display:block;
+}
+
+.banner .img-container img{
+	width: 556px;
+	height:auto;
+}
+.banner .btn{
+	padding: 20px 0;
+}
+.banner .btn button{
+	background: #E02C6D;
+	border: 1px solid #E02C6D;
+	color: #fff;
+	padding: 14px 18px 12px 12px;
+	font-size: 16px;
+    cursor: pointer;
+}
+.banner .btn button i{
+	font-size: 17px;
+	padding-left: 7px;
+	transition: ease-in-out .3s;
+}
+.banner .btn button:hover i{
+	transition: ease-in-out .4s;
+	transform: translateX(12px);
+}
+
+/* Banner Section Animation*/
+.banner .img-animation {
+	animation:pulse 4s linear infinite;
+}
+
+@-webkit-keyframes "pulse" {
+0% {
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+50% {
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+}
+100% {
+ -webkit-transform: scale(1);
+transform: scale(1);
+}
+}
+/* Banner Section CSS End*/
+
+/* Player Profile section start...*/
+.player-profile{
+	padding: 70px 0;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  .cards-item {
+	display: flex;
+	padding: 1rem;
+  }
+  @media (min-width: 40rem) {
+	.cards-item {
+	  width: 50%;
+	}
+  }
+  @media (min-width: 56rem) {
+	.cards-item {
+	  width: 30.3333%;
+	}
+  }
+  .card {
+	background-color: white;
+	border-radius: 0.25rem;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+  }
+  .card:hover .card-image {
+	filter: contrast(100%);
+  }
+  .card-content {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	padding: 1rem;
+  }
+  .card-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+	filter: contrast(70%);
+	overflow: hidden;
+	position: relative;
+	transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  }
+  .card-image::before {
+	content: "";
+	display: block;
+	padding-top: 56.25%;
+  }
+  @media (min-width: 40rem) {
+	.card-image::before {
+	  padding-top: 66.6%;
+	}
+  }
+  .card-image-1 {
+	background-image: url('../img/players/player-1.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+  }
+  .card-image-2 {
+	background-image: url('../img/players/player-2.png');
+	background-position:center;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+  }
+  .card-image-3 {
+	background-image: url('../img/players/player-3.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+  }
+  .card-image-4 {
+	background-image: url('../img/players/player-4.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+  }
+  .card-image-5 {
+	background-image: url('../img/players/player-5.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+  }
+  .card-image-6 {
+	background-image: url('../img/players/player-6.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+  }
+  .card-image-7 {
+	background-image: url('../img/players/player-7.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+  }
+  .card-image-8 {
+	background-image: url('../img/players/player-8.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+  }
+  .card-image-9 {
+	background-image: url('../img/players/player-9.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+  }
+  
+  .card-title {
+	color: #0f0f0f;
+	font-size: 1.25rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+  }
+  .card-text {
+	flex: 1 1 auto;
+	font-size: 0.875rem;
+	color: #5e5c5c;
+	line-height: 1.5;
+	padding: 10px 0;
+  }
+  /* Player Profile section End*/
+
+  /* Upcoming section Start...*/
+  .upcoming{
+      padding:0;
+	  text-align: center;
+	  background: url('../img/1.jpg');
+	  height:560px;
+	  width: 100%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-attachment: cover;
+	  position:relative;
+  }
+  .upcoming h1{
+	  font-size: 32px;
+  }
+  .match-content{
+      padding-top: 130px;
+	  text-align: center;
+	  color: #fff;
+	  margin: auto;
+  }
+.match-content h3{
+	padding-bottom: 20px;
+	font-weight: 700;
+}
+.match-content h2{
+	font-weight: 700;
+	font-size: 32px;
+}
+.match-content h1{
+	color: rgb(12, 134, 235);
+}
+.match-content p{
+	margin-top: 30px;
+	color: #E02C6D;
+}
+  /* Footer start...*/
+  footer{
+	  text-align: center;
+  }
+  footer .footer-logo img{
+           max-width: 350px;
+		   height:auto;
+  }
+  footer .social-icon ul li{
+	  list-style: none;
+	  display:inline-block;
+	  margin-left: 5px;
+  }
+  footer .social-icon ul li a{
+	  display:table-cell;
+	  vertical-align: middle;
+	  font-size: 18px;
+	  color:rgb(70, 70, 70);
+	  height:36px;
+	  width:36px;
+	  border-radius: 50%;
+	  background: #c4c5c7;
+  }
+  footer .social-icon ul li a i{
+    transition:ease-in-out .7s;
+
+  }
+  footer .social-icon ul li:hover i{
+	  transform:rotate(360deg);
+	  transition:ease-in-out 1s;
+	  color: #1C9CEB;
+  }
+  footer .social-icon ul li:first-child:hover i{
+	color: #E84539;
+  }
+  footer .social-icon ul li:nth-child(2):hover i{
+	color:#EC5E95;
+  }
+  footer .social-icon ul li:last-child:hover i{
+	color: #F70000;
+  }
+  .copyright p{
+	  text-align: center;
+	  font-size: 18px;
+	  color: #0f0f0f;}
+	  .copyright{
+		  padding-bottom: 30px;
+	  }
